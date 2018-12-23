@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历生成器</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >张翔</h1>
+                <h4 id="persona-tag" >Android研发工程师</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">张翔</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">郑州大学</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2016</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">13051552037</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">805198265@qq.com</span></li>
+                    <li>
+                        <label class="left-label">个人主页</label><span class="label-value">http://zhangxiang2014.github.io/</span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value">https://github.com/zhangxiang2014</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Android</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">java</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">git</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">c++</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">mk</label>
+                        <progress value="60" max="100"></progress>
+                    </li>
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">绘图</label><span class="label-value">Staruml、Visio、ProcessOn</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">分析工具</label><span class="label-value">Mat、HierarchyViewer、Systrace、ApkTools</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">Android</label><span class="label-value">View绘制、事件分发、Handler原理、AMS、PMS、Binder架构等</span></li>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="static/image/weixin.png" alt="">
+
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                       <li>
+                        <h3>郑州大学 - 软件卓越工程师专业（本科）2012-2016</h3>
+                        <p>本科期间学习java、c、c++、编译原理、数据结构算法、操作系统、软件工程等课程，参与蓝桥杯编程比赛并获得二等奖，大三下完成实践课程物流跟踪系统客户端开发
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>2015.8-2016.6  中科院计算技术研究所 （客座实习）</h3>
+                        <p>主要研究“人体动画捕捉与合成”和“数字几何处理”,建立人在计算机生成空间(虚拟环境)中的几何特性与行为特性的逼真表示。期间完成了基于unity3d的人体三维模型渲染、和迪生动画公司合作开发了基于qt的动画绘图软件。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>2016.7-至今 MIUI互联网一部 | 安全组 | Android研发工程师</h3>
+                        <p>1.负责安全中心病毒扫描商业化改版<br/>
+                        	2.负责病毒扫描和安全扫描业务逻辑合并，优化病毒库更新逻辑，持续性优化性能问题<br/>
+                        	3.负责手机端和pad端游戏加速架构设计和开发<br/>
+                        	4.多版本游戏加速功能迭代以及日常维护
+                        </p>
+                    </li>
+                </ul class="experience-list">
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>基于android客户端和html、ajax、js的前端，spring+hibernate+mysql+webservice的restful service的后端的B2C的物流跟踪系统（原型）</h3>
+                        <p>
+                           学习用uml对物流系统建模、时序图描述物流跟踪流程，完成快递状态管理和服务端webserver和本地客户端同步更新，使用mvp架构实现视图分离，接入百度地图sdk和zxing二维码扫描sdk，实现基于gps的物流实时跟踪。
+                            <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>基于矢量图的平面2D动画制作软件插件的设计与开发（迪生动画公司）
+</h3>
+                        <p>
+                            动画场景编辑：基本绘图功能，包括画笔、填充色、橡皮擦、取色、笔刷特效等，多图层管理。<br/>
+矢量图编辑：实现图元编辑的平滑效果、矢量图剪切算法、图元缩放旋转。<br/>
+帧间动画：实现相邻帧的洋葱片效果，提供与视频编辑的接口封装成插件。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>病毒扫描（日活500万）</h3>
+                        <p>
+                            完成病毒扫描的ui和商业化改版，实现结果页信息流解析缓存和预加载，合并病毒扫描和支付扫描model和业务层逻辑，实现扫描动画和病毒的随机游走动画，优化病毒库客户端服务端更新逻辑，miui9期间持续性关注并解决app性能和稳定性问题。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>游戏加速（日活千万）</h3>
+                        <p>
+                            架构：效仿serviemanager实现了一套基于监听应用前后台切换的游戏服务管理框架。<br/>
+服务：通过binder和socket通信方式接入rom底层提供的网络资源分配优化、cpu优化、沉浸模式等接口，hook ams实现微信qq电话拦截，与迅游合作接入了sdk提供了游戏vpn加速能力，统计用户游戏行为（包括游戏使用时长、频次）自动上传信息生成用户画像。<br/>
+上层：使用viewpager+fragment实现游戏加速ui框架并解决了内部滑动冲突和fragment管理，本地数据库管理游戏定制化数据，自动识别加入游戏。实现了基于用户行为的推荐信息流（包含视频、图片、文字帖子和广告）的解析、缓存和播放，播放部分接入exoplayer2视频框架并简单封装了一个视频播放视图组件，可绑定生命周期并管理mediaplayer资源、自动播放暂停、进度缓存。<br/>
+商业化：实现了签到领取礼包和云控运营活动。<br/>
+游戏悬浮窗：游戏过程通过监听手势操作唤出游戏盒子悬浮窗，可快捷查看手机当前状态，提供多种快捷功能，基于原生多窗口提供了recentTask app的快捷回复模式。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h4>郑州大学国家奖学金二等奖</h4>
+                    </li> 
+                    <li>
+                        <h4>中科院计算所优秀客座实习生</h4>
+                    </li> 
+                    <li>
+                        <h4>数次获得MIUI最受用户喜爱功能更新奖（爆米花奖）</h4>
+                          <li>
+                        <h4>2018 5月MIUI系统平台优秀工程师奖（湛卢奖） 2/300
+</h4>
+                    </li> 
+                      <li>
+                        <h4>2018 手机部年度技术创新大奖</h4>
+                    </li> 
+
+                    </li>                     
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <p>
+                    喜爱阅读思考，热爱技术、乐于钻研并实践
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
