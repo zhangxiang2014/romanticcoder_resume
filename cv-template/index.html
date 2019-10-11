@@ -91,7 +91,7 @@
                         <label class="left-label">分析工具</label><span class="label-value">Mat、HierarchyViewer、Systrace、ApkTools</span></li>
                     </li>
                     <li>
-                        <label class="left-label">Android</label><span class="label-value">四大组件、View绘制、事件分发、Handler原理、性能优化、AMS、PMS、Binder、架构等</span></li>
+                        <label class="left-label">Android</label><span class="label-value">view绘制、事件分发、app架构、插件化热修复、性能优化、AMS、PMS、Binder、组件化等</span></li>
                     </li>
                 </ul>
             </div>
@@ -171,10 +171,11 @@
                     <li>
                         <h3>游戏加速（日活千万）</h3>
                         <p>
-                            架构：效仿serviemanager实现了一套基于监听应用前后台切换的游戏服务管理框架。<br/>
-服务：通过binder、socket多种通信方式接入rom底层提供的网络资源分配优化、cpu优化、沉浸模式等接口并以devicefeature、systemproperty与上层解耦，hook ams实现微信qq电话拦截，与迅游合作接入了sdk提供了游戏vpn加速能力，统计用户游戏行为（包括游戏使用时长、频次）定时上传。<br/>
-上层：提供了基于统一入口管理的两套（横竖屏）ui风格，横屏展示页面采用了hybird方案快速迭代。native采用viewpager+fragment管理，自动识别游戏并持久到数据库。实现了基于用户行为的推荐信息流（包含视频、图片、文字帖子和广告）的解析、缓存，播放部分接入exoplayer2视频框架，封装了播放组件可绑定生命周期管理mediaplayer资源、自动播放暂停、进度缓存。<br/>
-商业化：实现了签到领取礼包和云控运营活动。<br/>
+                            底层架构：效仿serviemanager实现了一套基于监听应用前后台切换的游戏服务管理框架。<br/>
+app技术选型：网络retrofit+okhttp+rx，ui架构jetpack+mvvm，图片加载glide，通信eventbus。<br/>
+服务：通过binder、socket多种通信方式接入rom底层提供的网络资源分配优化、cpu优化、等接口并以devicefeature、systemproperty与上层解耦，hook ams实现微信qq电话拦截前后台监听，与迅游合作接入了sdk提供了游戏vpn加速能力，统计用户游戏行为（包括游戏使用时长、频次）定时上传。<br/>
+上层：提供了可切换的横竖屏ui风格，横屏展示页面采用了hybird方案快速迭代。native采用viewpager+fragment管理，自动识别游戏并持久到数据库。实现了基于用户行为的推荐信息流（包含视频、图片、文字帖子和广告）的解析、缓存，播放部分接入exoplayer2视频框架，封装了播放组件可绑定生命周期管理mediaplayer资源、自动播放暂停、进度缓存。<br/>
+
 游戏悬浮窗：游戏过程提供通过监听测滑唤出的全手势操作游戏盒子悬浮窗，可快捷查看手机状态、一键操作功能、最近app快捷进入基于原生多窗口的小窗回复模式。
                         </p>
                     </li>
@@ -195,9 +196,6 @@
                           <li>
                         <h4>2018 5月MIUI系统平台优秀工程师奖（湛卢奖） 2/300
 </h4>
-                    </li> 
-                      <li>
-                        <h4>2018 手机部年度技术创新大奖</h4>
                     </li> 
 
                     </li>                     
